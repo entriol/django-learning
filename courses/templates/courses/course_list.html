@@ -1,5 +1,8 @@
 {% for course in courses %}
-    <h2>{{ course.title }}</h2>
+    <h2>
+        <a href="{{ course.id }}">{{ course.title }}</a>
+    </h2>
+
     <p>{{ course.description }}</p>
 {% endfor %}
 
